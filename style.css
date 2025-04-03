@@ -1,0 +1,113 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Main container styling */
+main {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+}
+
+/* Options list styling */
+.options ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.options li {
+    margin-bottom: 15px;
+}
+
+.options label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.options input[type="range"] {
+    width: 100%;
+}
+
+.options input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.options select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Special characters list styling */
+.special_characters_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.special_characters_list li {
+    background: #e0e0e0;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Button styling */
+.button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.generate_button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.generate_button:hover {
+    background-color: #0056b3;
+}
+
+/* Output field styling */
+.output_field {
+    margin-top: 20px;
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 14px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+}
