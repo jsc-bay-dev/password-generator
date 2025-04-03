@@ -110,4 +110,6 @@ main {
     align-items: center;
     justify-content: center;
     color: #555;
+    overflow-x: auto;
+    white-space: nowrap;
 }
