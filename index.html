@@ -11,7 +11,7 @@
         <div class="options"><ul>
             <li>
                 <label for="length">Length:</label>
-                <input type="range" id="length" name="length" min="0" max="240" value="0" oninput="document.getElementById('length_value').textContent = this.value">
+                <input type="range" id="length_bar" name="length" min="0" max="240" value="0">
                 <span id="length_value">0</span>
             </li>
             <li>
@@ -57,7 +57,7 @@
         <div class="button">
             <button id="generate_button">Generate Password</button>
         </div>
-        <div class="output_field"></div>
+        <div class="output_field" id="output_field"></div>
     </main>
     <script src="script.js"></script>
 </body>
