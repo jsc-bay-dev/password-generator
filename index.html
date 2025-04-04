@@ -8,43 +8,44 @@
 </head>
 <body>
     <main>
-        <div class="options"><ul>
-            <li>
+        <div class="options">
+            <div>
                 <label for="length">Length:</label>
                 <input type="range" id="length_bar" name="length" min="0" max="240" value="0">
                 <span id="length_value">0</span>
-            </li>
-            <li>
+            </div>
+            <div>
                 <label for="lower_case">
-                    <input type="checkbox" id="lower_case" name="lower_case" checked>
+                    <input type="checkbox" id="lower_case" name="lower_case" checked aria-label="Include lowercase letters">
                     Lowercase Letters
-                    <input type="text" class="at_least" placeholder="character minimum" id="lower_case_min">
+                    <input type="text" class="at_least" placeholder="character minimum" id="lower_case_min" aria-label="Minimum lowercase letters">
                 </label>
-            </li>
-            <li>
+            </div>
+            <div>
                 <label for="upper_case">
-                    <input type="checkbox" id="upper_case" name="upper_case" checked>
+                    <input type="checkbox" id="upper_case" name="upper_case" checked aria-label="Include uppercase letters">
                     Uppercase Letters
-                    <input type="text" class="at_least" placeholder="character minimum" id="upper_case_min">
+                    <input type="text" class="at_least" placeholder="character minimum" id="upper_case_min" aria-label="Minimum uppercase letters">
                 </label>
-            </li>
-            <li>
+            </div>
+            <div>
                 <label for="numbers">
-                    <input type="checkbox" id="numbers" name="numbers" checked>
+                    <input type="checkbox" id="numbers" name="numbers" checked aria-label="Include numbers">
                     Numbers
-                    <input type="text" class="at_least" placeholder="character minimum" id="numbers_min">
+                    <input type="text" class="at_least" placeholder="character minimum" id="numbers_min" aria-label="Minimum numbers">
                 </label>
-            </li>
-            <li>
+            </div>
+            <div>
                 <label for="special_characters">
+                    <input type="checkbox" id="special_characters" name="special_characters" checked aria-label="Include special_characters">
                     Special Characters:
-                    <input type="text" class="at_least" placeholder="character minimum" id="special_characters_min">
+                    <input type="text" class="at_least" placeholder="character minimum" id="special_characters_min" aria-label="Minimum special characters">
                 </label>
                 <ul class="special_characters_list">
                     
                 </ul>
-            </li>
-            <li>
+            </div>
+            <div>
                 <label for="frequency">Frequency:</label>
                 <select id="frequency" name="frequency">
                     <option value="daily">Daily</option>
@@ -52,12 +53,17 @@
                     <option value="monthly">Monthly</option>
                     <option value="yearly">Yearly</option>
                 </select>
-            </li>
-        </ul></div>
+            </div>
+        </div>
         <div class="button">
             <button id="generate_button">Generate Password</button>
         </div>
-        <div class="output_field" id="output_field"></div>
+        <div class="output" id="output_container">
+            <p class="output" id="output_field"></p>
+            <button class="output" id="copy_button" aria-label="Copy to Clipboard">
+                <img src="clipboard-icon.png" alt="Copy to Clipboard">
+            </button>
+        </div>
     </main>
     <script src="script.js"></script>
 </body>
