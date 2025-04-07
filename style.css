@@ -84,3 +84,34 @@ body {
 .special_characters_list li input:checked {
     background-color: none;
 }
+
+input[type="checkbox"] {
+    accent-color: black;
+}
+
+/* Styling for progress bar dots */
+#length_bar {
+    appearance: none;
+    width: 100%;
+    height: 8px;
+    background: #e0e0e0;
+    border-radius: 5px;
+    outline: none;
+
+    &::-webkit-slider-thumb {
+        appearance: none;
+        width: 16px;
+        height: 16px;
+        background: black;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    &::-moz-range-thumb {
+        width: 16px;
+        height: 16px;
+        background: black;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+}
